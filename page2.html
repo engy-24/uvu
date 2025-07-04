@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neux Homepage</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="theicon">
+            <span><i class="fas fa-bolt icon"></i> <a href="#">Neux</a></span>
+        </div>
+
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-user icon"></i>
+            <span id="userNameDisplay"></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="main1">
+            <div class="content-box">
+                <h1>Modern Solutions for <br> Digital Excellence</h1>
+                <p id="myParagraph">We craft beautiful digital experiences that drive results and elevate your brand to
+                    new heights.</p>
+
+                <div class="buttons">
+                    <button class="btn btn-explore"><i class="fas fa-rocket icon"></i> Explore Features</button>
+                    <button class="btn btn-contact"><i class="fas fa-phone icon"></i> Contact Us</button>
+                </div>
+            </div>
+
+            <div class="cards-container" id="cardsContainer">
+                <!-- ✅ Cards will appear here -->
+            </div>
+
+            <div class="buttons-icons">
+                <button onclick="toggleText()" id="textEyeButton">
+                    <i class="fas fa-eye icon" id="textEyeIcon"></i>
+                </button>
+                <button onclick="changeBackground()">
+                    <i class="fas fa-palette icon"></i>
+                </button>
+                <button onclick="addCard()">
+                    <i class="fas fa-plus icon"></i>
+                </button>
+                <button onclick="enlargeBox()">
+                    <i class="fas fa-magic icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="main2">
+            <h1>Why choose Us</h1>
+            <p>Our Platform Offers everything you need to build a powerful online presence.</p>
+
+            <div class="buttons-icons">
+                <button onclick="toggleCards()" id="cardsEyeButton">
+                    <i class="fas fa-eye icon" id="cardsEyeIcon"></i>
+                </button>
+                <button onclick="addCard2()">
+                    <i class="fas fa-plus icon"></i>
+                </button>
+                <button onclick="enlargeBox2()">
+                    <i class="fas fa-magic icon"></i>
+                </button>
+            </div>
+
+            <div id="cards2">
+                <div class="acard">
+                    <div><i class="fas fa-bolt icon" style="font-size: 40px; color: rgb(217, 114, 114);"></i></div>
+                    <h3>Lightning Fast</h3>
+                    <p>
+                        Optimized for performance <br> with instant load times and <br>
+                        smooth animations.</p>
+                </div>
+
+                <div class="acard">
+                    <div><i class="fas fa-mobile-screen icon" style="font-size: 40px; color: rgb(217, 114, 114);"></i>
+                    </div>
+                    <h3>Fully Responsive</h3>
+                    <p>
+
+                        Looks perfect on any <br> device from smartphones <br>
+                        to large desktop screens.</p>
+                </div>
+
+                <div class="acard">
+                    <div><i class="fas fa-cog icon" style="font-size: 40px; color: rgb(217, 114, 114);"></i></div>
+                    <h3>Customizable</h3>
+                    <p>
+
+                        Easily customize every <br> aspect to match your <br>brand identity.</p>
+                </div>
+            </div>
+
+            <div class="cards-container2" id="cards-container2">
+                <!-- ✅ New cards will appear here -->
+            </div>
+        </div>
+        <div class="main3">
+            <h3>Our Services</h3>
+            <p>We offer comperehensive solutions to meet all your digital needas.</p>
+        </div>
+        <div class="cards3">
+            <div class="card3">
+                <div class="icon-section">
+                    <i class="fas fa-code"></i> <!-- أيقونة كود -->
+                </div>
+                <h3>Web Development</h3>
+                <p>Custom websites built with modern technologies for optimal performance.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="card3">
+                <div class="icon-section">
+                    <i class="fas fa-chart-line "></i>
+                    <!-- أيقونة كود -->
+                </div>
+                <h3>Web Development</h3>
+                <p>Custom websites built with modern technologies for optimal performance.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="card3">
+                <div class="icon-section">
+                    <i class="fas fa-paint-brush "></i>
+
+                </div>
+                <h3>Web Development</h3>
+                <p>Custom websites built with modern technologies for optimal performance.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+        <div class="main4">
+            <div class="mainText">
+                <h3>Our Impact</h3>
+                <p>Numbers that speak about our dedication and success</p>
+            </div>
+            <div class="cards4">
+                <div class="card4">
+                    <div class="thenewicon">
+                        <i class="fas fa-user "></i>
+
+                    </div>
+                    <p class="number">25</p>
+                    <p class="theText">Happy Clients</p>
+                </div>
+                <div class="card4">
+                    <div class="thenewicon">
+                        <i class="fas fa-shopping-bag "></i>
+
+
+                    </div>
+                    <p class="number">500</p>
+                    <p class="theText">Projects Completed</p>
+                </div>
+                <div class="card4">
+                    <div class="thenewicon">
+                        <i class="fas fa-trophy "></i>
+
+
+                    </div>
+                    <p class="number">400</p>
+                    <p class="theText">Awards Won</p>
+                </div>
+                <div class="card4">
+                    <div class="thenewicon">
+                        <i class="fas fa-users "></i>
+                    </div>
+                    <p class="number">88</p>
+                    <p class="theText">Team Members</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="contact-box">
+            <h2 class="contact-title">Get In Touch</h2>
+            <p class="contact-subtitle">We'd love to hear from you!</p>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label class="form-label">Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="your@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label">Message</label>
+                    <textarea id="message" class="form-input" placeholder="Type your message..." required></textarea>
+                </div>
+
+                <button type="submit" class="send-button">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+
+            <!-- ✅ الكارد اللي هيظهر -->
+            <div id="userCard" class="user-card hidden">
+                <i class="fas fa-user-circle"></i>
+                <p><strong>Name:</strong> <span id="cardName"></span></p>
+                <p><strong>Email:</strong> <span id="cardEmail"></span></p>
+                <p><strong>Message:</strong> <span id="cardMessage"></span></p>
+            </div>
+        </div>
+
+    </main>
+    <footer class="nexus-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>Nexus</h2>
+                <p>Modern solutions for digital excellence. We help businesses grow through innovative technology.</p>
+                <div class="social-media">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="links-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="links-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div class="links-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>123 Business Ave, New York, NY 10001</li>
+                        <li><a href="mailto:info@nexus.com">info@nexus.com</a></li>
+                        <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                        <li>Mon-Fri: 8AM - 5PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 Nexus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="project.js"></script>
+
+</body>
+
+</html>
